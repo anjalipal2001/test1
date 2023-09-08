@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+### `Movie Review Web App`
+The Movie Review Web App is a simple web application that allows users to add movie reviews, analyze their sentiment, and view a list of analyzed reviews. This app is built using React and uses the Cohere AI API for sentiment analysis.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Add movie reviews.
+Analyze the sentiment of reviews using Cohere AI.
+Display sentiment results (Positive, Neutral, Negative).
+Upvote and downvote reviews.
+Sort reviews by votes in descending order.
+Responsive design for both desktop and mobile devices.
 
-## Available Scripts
 
-In the project directory, you can run:
+Installation
+Clone the repository to your local machine:
+git clone https://github.com/anjalipal2001/movie-review-web-app.git
+Navigate to the project directory:
+cd movie-review-web-app
+Install the project dependencies:
+npm install
+Start the development server:
+npm start
+Open your web browser and visit http://localhost:3000 to use the Movie Review Web App.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+API Integration
+The Movie Review Web App integrates with the Cohere AI API for sentiment analysis. To use the API, you need to obtain an API key from Cohere AI and replace it in the AddReview.js file:
 
-### `npm test`
+const apiKey = 'YOUR_API_KEY_HERE';
+Right now I am putting my personal API key in this so you dont have to login and generate your own key.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Acknowledgments
+This project uses the Cohere AI API for sentiment analysis.
+Contact
+If you have any questions or suggestions, please feel free to contact us at anjalipalj931@gmail.com
