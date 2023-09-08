@@ -29,16 +29,49 @@ function AddReview({ onAddReview }) {
          inputs: [reviewText], 
         
           examples: [
-            { text: '“This film stands out in today cinema landscape. Every scene is thoughtfully crafted, and thecharacters have depth and nuance. The story flows naturally, keeping viewers engaged. Itahigh point in recent movie releases.', label: 'positive review' },
-            { text: '“While the movie had its moments, it failed to leave a lasting impression. The cast did their job,but the script lacked depth. The music was fitting but forgettable. Overall, an average experience.”', label: 'neutral review' }, // Updated label to 'neutral review'
-            { text: 'I ordered more for my friends', label: 'positive review' },
-            { text: 'I would buy this again', label: 'positive review' },
-            { text: 'I would recommend this to others', label: 'neutral review' },
-            { text: 'The package was damaged', label: 'negative review' },
-            { text: 'The order is 5 days late', label: 'neutral review' },
-            { text: 'The order was incorrect', label: 'negative review' },
-            { text: '“The movie starts with promise but soon disappoints. It drags at times, and some dialogues feel forced. Despite a talented cast, the script doesnt do them justice. ”', label: 'negative review' },
-         
+            { text: 'This film stands out in todays cinema landscape. Every scene is thoughtfully crafted, and the characters have depth and nuance. The story flows naturally, keeping viewers engaged. It ahigh point in recent movie releases', label: 'positive review' },
+            { text: `The film wields a powerful narrative, fused with a humor that both organic and poignant. Our
+            protagonist's journey is a tapestry of emotive beats, matched by an equally evocative score. The
+            performances here aren't merely acted; they're lived. This is cinema in its most resonant form.`, label: 'positive review' }, // Updated label to 'neutral review'
+            { text: `This film is a breath of fresh air. Beautifully shot scenes and a compelling storyline make it a
+            standout. The cast's chemistry is palpable, driving the narrative forward with ease. A delightful
+            cinematic experience from start to finish.`, label: 'positive review'
+              },
+            
+            { text: `A captivating blend of drama and wit. The director's vision shines through every frame,
+            complemented by a pitch-perfect score. Performances are top-notch, drawing viewers into the
+            heart of the story. It's a film that lingers long after the credits roll.`, label: 'positive review'
+              },
+            
+            { text: `While the movie had its moments, it failed to leave a lasting impression. The cast did their job,
+            but the script lacked depth. The music was fitting but forgettable. Overall, an average
+            experience.`, label: 'neutral review' },
+            { text: `There are moments of brilliance, but they're spread thin. Some themes resonate, but the
+            delivery isn't always there. The music fits but isn't standout. It's a mixed bag overall.`, label: 'neutral review' },
+            { text: `The movie is competently made, with moments that genuinely shine. However, the story often
+            treads familiar territory, making it predictable at times. While the actors put forth solid
+            performances, the script limits their potential. An even mix of highs and lows.`, label: 'neutral review' },
+            { text: `It's a film that has its moments but fails to fully captivate. The visual appeal is there, but the
+            emotional depth is inconsistent. Some scenes are beautifully executed, while others fall flat. A
+            decent watch but not groundbreaking.`, label: 'neutral review' },
+            { text: `The movie starts with promise but soon disappoints. It drags at times, and some dialogues feel
+            forced. Despite a talented cast, the script doesn't do them justice. It's a forgettable outing.`, label: 'negative review'
+              },
+            
+              { text: `The film, regrettably, buckles under the weight of its own aspirations. Amidst its sprawling
+              narrative, the essence is lost, characters relegated to mere shadows. Even its cinematographic
+              choices, while occasionally inspired, largely feel derivative. A cinematic journey that promises
+              much but delivers little.`, label: 'negative review'
+              },
+              { text: `Despite its potential, the film doesn't quite hit the mark. The narrative feels disjointed, often
+              losing its momentum. While there are a few standout performances, they're overshadowed by a
+              lackluster script. A missed opportunity in storytelling.`, label: 'negative review'
+              },
+              { text: `The movie offers a premise filled with promise but struggles in its execution. Pacing issues
+              detract from key moments, and character development is lacking. While it boasts some
+              well-composed shots, they're not enough to lift the overall experience. A film that's less than the
+              sum of its parts.`, label: 'negative review'
+                },
           ],
         };
   
