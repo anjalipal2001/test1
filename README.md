@@ -12,7 +12,7 @@ Responsive design for both desktop and mobile devices.
 
 Installation
 Clone the repository to your local machine:
-git clone https://github.com/anjalipal2001/movie-review-web-app.git
+git clone https://github.com/anjalipal2001/test1
 Navigate to the project directory:
 cd movie-review-web-app
 Install the project dependencies:
