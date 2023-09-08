@@ -91,8 +91,7 @@ function AddReview({ onAddReview }) {
             confidence: classification.confidence,
           }));
  
-           // Now you have an array of predictions for each input
-        console.log("Predictions:", predictions);
+        
 
         // Determine the sentiment result based on the highest confidence prediction
         const highestConfidencePrediction = predictions.reduce((prev, current) =>
@@ -127,7 +126,7 @@ function AddReview({ onAddReview }) {
   
     // Function to handle upvote
   const handleUpvote = (index) => {
-    console.log(`Upvoting review at index ${index}`);
+   
       setReviewList((prevReviewList) =>
         prevReviewList.map((review, i) =>
           i === index ? { ...review, votes: review.votes + 1 } : review
@@ -135,14 +134,19 @@ function AddReview({ onAddReview }) {
       );
     };
     // Function to handle downvote
+ 
   const handleDownvote = (index) => {
-
-      setReviewList((prevReviewList) =>
-        prevReviewList.map((review, i) =>
-          i === index ? { ...review, votes: review.votes - 1 } : review
-        )
-      );
-    };
+    setReviewList((prevReviewList) =>
+      prevReviewList.map((review, i) => {
+        if (i === index) {
+          // Check if votes are greater than 0 before decrementing
+          const newVotes = review.votes > 0 ? review.votes - 1 : 0;
+          return { ...review, votes: newVotes };
+        }
+        return review;
+      })
+    );
+  };
 
   // Sort reviews by votes in descending order
   const sortedReviews = [...reviewList].sort((a, b) => b.votes - a.votes);
